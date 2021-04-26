@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0 ;
+    margin : 0 ;
+}
+body
+{   background-color: #d5d5d5;
+    min-height: 100vh;
+    color : black ;
+    font-family: 'Quicksand', sans-serif;
+}
+.header
+{
+    /* background: pink; */
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px ;
+
+}
+.header h1 
+{
+    font-size: 50px ;
+    margin-top: 30px ;
+    color: brown ;
+    animation: Head 1s linear alternate-reverse infinite;
+}
+@keyframes Head {
+   from
+   {
+       color : black;
+   }
+   to
+   {
+       color : rgb(122, 2, 122);
+       letter-spacing: 10px ;
+   }
+}
+.title
+{
+    background-color: orange ;
+}
+.containers
+{
+    /* background-color: blueviolet ; */
+    display: flex ;
+    flex-direction: column;
+    line-height: 8rem;
+    width : 75% ;
+    justify-content: center;
+    margin : 130px auto ;
+    text-align: center;
+    align-items: center;
+    box-shadow: 10px 10px 60px black;
+}
+.containers h1 
+{
+    font-size: 40px ;
+    color : darkslategrey ;
+}
+.values 
+{
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-evenly;
+    width : 70% ;
+    margin : auto ;
+    text-align: center;
+    align-items: center;
+}
+.big-text
+{
+    line-height: 5rem;
+    font-size: 5rem;
+}
+span
+{
+    margin : 0px 10px ;
+}
+@media screen and (min-width : 200px){
+    .containers
+{
+    /* background-color: blueviolet ; */
+    display: flex ;
+    flex-direction: column;
+    line-height: 8rem;
+    width : 85% ;
+    justify-content: center;
+    margin : 130px auto ;
+    text-align: center;
+    align-items: center;
+    box-shadow: 10px 10px 60px black;
+}
+.header h1 
+{
+    font-size: 40px ;
+    margin-top: 30px ;
+    color: brown ;
+    animation: Head 1s linear alternate-reverse infinite;
+}
+@keyframes Head {
+   from
+   {
+       color : black;
+   }
+   to
+   {
+       color : rgb(122, 2, 122);
+       letter-spacing: 3px ;
+   }
+}
+
+.big-text
+{
+    line-height: 5rem;
+    font-size: 3rem;
+}
+}
